@@ -1,0 +1,27 @@
+spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/mydb
+#    username: postgres
+#    password: 123456
+  datasource:
+    #url: jdbc:h2:mem:testdb
+    url: jdbc:h2:file:~/demodb2024
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 123456
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQL10Dialect
+
+    show-sql: true
+#spring:
+#  h2:
+server:
+  port: 8084
+#    console.enabled: true
